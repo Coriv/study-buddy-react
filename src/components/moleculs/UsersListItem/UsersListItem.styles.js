@@ -19,6 +19,7 @@ export const Wrapper = styled.li`
 
 export const StyledButtonWrapper = styled.div`
   margin-left: auto;
+  display: flex;
 `;
 
 export const StyledWrapperAverage = styled.div`

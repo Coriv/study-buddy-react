@@ -7,7 +7,7 @@ import { Wrapper, StyledWrapperUserInfo, StyledWrapperAverage, StyledButtonWrapp
 
 const showIndex = (index) => alert(`This is student #${index + 1}`);
 
-const UsersListItem = ({ index, usersData: { average, name, attendance } }) => (
+const UsersListItem = ({ deleteUser, index, usersData: { average, name, attendance } }) => (
   <Wrapper>
     <StyledWrapperAverage>
       <AverageCounter average={average} />
@@ -17,11 +17,13 @@ const UsersListItem = ({ index, usersData: { average, name, attendance } }) => (
     </StyledWrapperUserInfo>
     <StyledButtonWrapper>
       <Button onClick={() => showIndex(index)} />
+      <Button onClick={() => deleteUser(name)} />
     </StyledButtonWrapper>
   </Wrapper>
 );
 
 UsersListItem.propTypes = {
+  deleteUser: PropTypes.func,
   index: PropTypes.number.isRequired,
   usersData: PropTypes.shape({
     name: PropTypes.string,

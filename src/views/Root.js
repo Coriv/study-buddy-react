@@ -17,7 +17,7 @@ const Root = () => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
     <Wrapper>
-      <UserLists />
+      <UserLists legalText="Data may be anonymised on request." />
     </Wrapper>
   </ThemeProvider>
 );
