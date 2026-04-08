@@ -10,6 +10,8 @@ export const theme = {
     buttonColor: '#399494',
     red: '#c90f03',
     green: '#1e8f00',
+    lightpurple: '#645a85',
+    darkPurple: '#3a2972',
   },
   fontSize: {
     l: '17px',
